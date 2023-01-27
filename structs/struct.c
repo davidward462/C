@@ -7,10 +7,10 @@ struct
     int posY;
     int hp;
     bool isAlive;
-} entity1, entity2;
+} entity1 = {0, 0, 100, true};
 
 
 int main()
-{
+{ 
     return 0;
 }
