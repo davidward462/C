@@ -12,5 +12,6 @@ struct
 
 int main()
 { 
+    printf("(%d, %d) %dhp\n", entity1.posX, entity1.posY, entity1.hp);
     return 0;
 }

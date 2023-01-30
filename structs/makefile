@@ -1,2 +1,2 @@
-struct: struct.c
-	gcc struct.c -o struct
+s: structType.c
+	gcc structType.c -o s
