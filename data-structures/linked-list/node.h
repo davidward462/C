@@ -1,5 +1,5 @@
-struct Node
+typedef struct node
 {
     int value;
-    struct Node* next;
-};
+    struct node* next;
+} node_t;
