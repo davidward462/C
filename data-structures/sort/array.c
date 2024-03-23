@@ -19,18 +19,47 @@ void SetArray(int array[], int length, int value)
     }
 }
 
+void Swap(int* a, int* b)
+{
+    int* temp = a;
+    b = a;
+    a = temp;
+}
+
+// Perform bubble sort on integer array of a given length.
+void BubbleSort(int array[], int length)
+{
+    // Only bother sorting lists with more than one element 
+    if (length > 1)
+    {
+        int a = array[0];
+        int b = array[1];
+
+        // Swap values if first is greater than the second
+        if(a > b)
+        {
+            // swap
+            int t = a;
+            a = b;
+            b = t;
+
+            // set values
+            array[0] = a;
+            array[1] = b;
+        }
+    }
+}
+
 int main()
 {
     printf("Begin.\n");
 
-    int a[] = {3, 5, 2, 6, 1, 9};
-    int length = 6;
+//    int b[] = {1, 2, 3, 4, 5};
+    int tuple[] = {5, 2};
 
-    PrintArray(a, length);
-
-    SetArray(a, length, 0);
-
-    PrintArray(a, length);
+    PrintArray(tuple, 2);
+    BubbleSort(tuple, 2);
+    PrintArray(tuple, 2);
 
     return 0;
 }
