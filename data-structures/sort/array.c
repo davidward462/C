@@ -26,6 +26,16 @@ void Swap(int* a, int* b)
     a = temp;
 }
 
+void LoopTest(int length)
+{
+    printf("length: %d\n", length);
+
+    for( int i = 0; i < length-1; ++i)
+    {
+        printf("%d ", i);
+    }
+}
+
 // Perform bubble sort on integer array of a given length.
 void BubbleSort(int array[], int length)
 {
@@ -39,19 +49,8 @@ int main()
     int a[] = {5, 2};
     int b[] = {56, 1203};
     int c[] = {14, 13, 63, 86, 1, 0, 6, 9};
-    int lengthC = 8;
 
-    PrintArray(a, 2);
-    BubbleSort(a, 2);
-    PrintArray(a, 2);
-
-    PrintArray(b, 2);
-    BubbleSort(b, 2);
-    PrintArray(b, 2);
-
-    PrintArray(c, lengthC);
-    BubbleSort(c, 8);
-    PrintArray(c, lengthC);
+    LoopTest(10);
 
     return 0;
 }
