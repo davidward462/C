@@ -29,28 +29,7 @@ void Swap(int* a, int* b)
 // Perform bubble sort on integer array of a given length.
 void BubbleSort(int array[], int length)
 {
-    // Only bother sorting lists with more than one element 
-    if (length > 1)
-    {
-        int doneSwap = 0;
-        int a = array[0];
-        int b = array[1];
 
-        // Swap values if first is greater than the second
-        if(a > b)
-        {
-            doneSwap = 1;
-
-            // swap
-            int t = a;
-            a = b;
-            b = t;
-
-            // set values
-            array[0] = a;
-            array[1] = b;
-        }
-    }
 }
 
 int main()
@@ -59,6 +38,8 @@ int main()
 
     int a[] = {5, 2};
     int b[] = {56, 1203};
+    int c[] = {14, 13, 63, 86, 1, 0, 6, 9};
+    int lengthC = 8;
 
     PrintArray(a, 2);
     BubbleSort(a, 2);
@@ -67,6 +48,10 @@ int main()
     PrintArray(b, 2);
     BubbleSort(b, 2);
     PrintArray(b, 2);
+
+    PrintArray(c, lengthC);
+    BubbleSort(c, 8);
+    PrintArray(c, lengthC);
 
     return 0;
 }
