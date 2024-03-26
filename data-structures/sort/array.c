@@ -29,8 +29,10 @@ void Swap(int* a, int* b)
 // Perform bubble sort on integer array of a given length.
 void BubbleSort(int array[], int length)
 {
+    // Iterate over list.
     for(int i = 0; i < length-1; i++)
     {
+        // Iterate through portion which has not been fully sorted.
         for(int j = 0; j < length-i-1; j++)
         {
             if( array[j] > array[j+1])
